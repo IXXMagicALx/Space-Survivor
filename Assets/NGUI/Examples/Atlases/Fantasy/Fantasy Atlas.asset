@@ -35,7 +35,7 @@ MonoBehaviour:
     borderLeft: 5
     borderRight: 5
     borderTop: 5
-    borderBottom: 5
+    borderBottom: 9
     paddingLeft: 0
     paddingRight: 0
     paddingTop: 0

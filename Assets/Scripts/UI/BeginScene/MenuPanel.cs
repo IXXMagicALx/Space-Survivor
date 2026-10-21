@@ -13,8 +13,10 @@ public class MenuPanel : BasePanel<MenuPanel>
     {
         StartBtn.onClick.Add(new EventDelegate(() =>
         {
-            //进入游戏场景
-            SceneManager.LoadScene("GameScene");
+            //显示角色选择面板
+
+            //隐藏主菜单面板
+            HidePanel();
         }));
 
         RankBtn.onClick.Add(new EventDelegate(() =>
@@ -27,6 +29,7 @@ public class MenuPanel : BasePanel<MenuPanel>
         SettingBtn.onClick.Add(new EventDelegate(() =>
         {
             //打开设置面板
+            SettingPanel.Instance.ShowPanel();
 
         }));
 

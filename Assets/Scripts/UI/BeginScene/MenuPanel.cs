@@ -9,6 +9,7 @@ public class MenuPanel : BasePanel<MenuPanel>
     public UIButton SettingBtn;
     public UIButton QuitBtn;
     #endregion
+
     public override void Init()
     {
         StartBtn.onClick.Add(new EventDelegate(() =>
@@ -22,7 +23,7 @@ public class MenuPanel : BasePanel<MenuPanel>
         RankBtn.onClick.Add(new EventDelegate(() =>
         {
             //打开排行榜面板
-
+            RankPanel.Instance.ShowPanel();
 
         }));
 

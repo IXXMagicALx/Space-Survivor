@@ -78,13 +78,13 @@ public class SettingPanel : BasePanel<SettingPanel>
     public void UpdatePanel()
     {
         #region 音乐相关
-        MusicSlider.value = GameDataManager.Instance.SingleVoiceData.MusicVolume;
-        MusicToggle.value = GameDataManager.Instance.SingleVoiceData.MusicIsOpen;
+        MusicSlider.value = GameDataManager.Instance.VoiceData.MusicVolume;
+        MusicToggle.value = GameDataManager.Instance.VoiceData.MusicIsOpen;
         #endregion
 
         #region 音效相关
-        SoundSlider.value = GameDataManager.Instance.SingleVoiceData.SoundVolume;
-        SoundToggle.value = GameDataManager.Instance.SingleVoiceData.SoundIsOpen;
+        SoundSlider.value = GameDataManager.Instance.VoiceData.SoundVolume;
+        SoundToggle.value = GameDataManager.Instance.VoiceData.SoundIsOpen;
         #endregion
     }
 }

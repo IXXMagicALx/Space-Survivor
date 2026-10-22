@@ -11,8 +11,8 @@ public class Music : MonoBehaviour
         instance = this;
         //获取音源并初始化声音设置
         audioSource = this.gameObject.GetComponent<AudioSource>();
-        SetMusicVolume(GameDataManager.Instance.SingleVoiceData.MusicVolume);
-        SetMusicMute(GameDataManager.Instance.SingleVoiceData.MusicIsOpen);
+        SetMusicVolume(GameDataManager.Instance.VoiceData.MusicVolume);
+        SetMusicMute(GameDataManager.Instance.VoiceData.MusicIsOpen);
     }
     #endregion
 

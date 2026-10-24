@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AirplaneData>
+    <AirplaneDatas>
+        <SingleAirplaneData Scale="20" ID= "1" ModelPath="GameObject/Airplane/Airplane1" Hp="3" Speed="6" Volume="4"/>
+        <SingleAirplaneData Scale="20" ID= "2" ModelPath="GameObject/Airplane/Airplane2" Hp="2" Speed="7" Volume="3"/>
+        <SingleAirplaneData Scale="20" ID= "3" ModelPath="GameObject/Airplane/Airplane3" Hp="4" Speed="8" Volume="5"/>
+        <SingleAirplaneData Scale="10" ID= "4" ModelPath="GameObject/Airplane/Airplane4" Hp="10" Speed="3" Volume="10"/>
+        <SingleAirplaneData Scale="15" ID= "5" ModelPath="GameObject/Airplane/Airplane5" Hp="6" Speed="5" Volume="7"/>
+    </AirplaneDatas>
+</AirplaneData>

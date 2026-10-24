@@ -15,7 +15,7 @@ public class MenuPanel : BasePanel<MenuPanel>
         StartBtn.onClick.Add(new EventDelegate(() =>
         {
             //显示角色选择面板
-
+            ChoosePanel.Instance.ShowPanel();
             //隐藏主菜单面板
             HidePanel();
         }));

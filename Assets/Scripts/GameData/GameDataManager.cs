@@ -10,11 +10,14 @@ public class GameDataManager
 		//每次启动时加载数据
 		VoiceData = XmlDataManager.Instance.LoadXmlData(typeof(VoiceData), "VoiceData") as VoiceData;
 		RankData = XmlDataManager.Instance.LoadXmlData(typeof(RankData),"RankData") as RankData;
+		AirplaneData = XmlDataManager.Instance.LoadXmlData(typeof(AirplaneData),"AirplaneData") as AirplaneData;
+
 	}
 	#endregion
 
 	public VoiceData VoiceData;
 	public RankData RankData;
+	public AirplaneData AirplaneData;
 
 	#region 声音相关方法
 	/// <summary>
@@ -87,5 +90,47 @@ public class GameDataManager
 	{
 		XmlDataManager.Instance.SaveXmlData(RankData, "RankData");
 	}
+	#endregion
+
+	#region 选角相关方法
+	/// <summary>
+	/// 当前选择飞船索引
+	/// </summary>
+	public int NowSelectAirplaneIndex = 0;
+	/// <summary>
+	/// 切换到上一个飞船
+	/// </summary>
+	public void ChangeToLastAirplane()
+	{
+		
+		if(NowSelectAirplaneIndex != 0)
+		{
+			//不是第一个切换就能得到上一个
+			NowSelectAirplaneIndex--;
+		}
+		else
+		{
+			//是第一个切换到上一个就得到最后一个
+			NowSelectAirplaneIndex = AirplaneData.AirplaneDatas.Count - 1;
+		}
+	}
+	/// <summary>
+	/// 切换到下一个飞船
+	/// </summary>
+	public void ChangeToNextAirplane()
+	{
+        if (NowSelectAirplaneIndex != AirplaneData.AirplaneDatas.Count - 1)
+        {
+            //不是最后一个切换就能得到下一个
+            NowSelectAirplaneIndex++;
+        }
+        else
+        {
+            //是最后一个切换到下一个就得到第一个
+            NowSelectAirplaneIndex = 0;
+        }
+
+    }
+
 	#endregion
 }

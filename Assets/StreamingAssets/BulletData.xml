@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<BulletData>
+    <BulletDatas>
+        <SingleBulletData Type="Straight" ForwardSpeed="20" RightSpeed="0" RotateSpeed="0" ResourcePath="GameObject/Bullet/Bullet_Storm" DeadEffect="GameObject/DeadEffect/DeadEffect_Storm" LifeTime="5" HomingTime="0" />
+        <SingleBulletData Type="Wave" ForwardSpeed="20" RightSpeed="100" RotateSpeed="5" ResourcePath="GameObject/Bullet/Bullet_Fire" DeadEffect="GameObject/DeadEffect/DeadEffect_Fire" LifeTime="10" HomingTime="0" />
+        <SingleBulletData Type="LeftArc" ForwardSpeed="30" RightSpeed="0" RotateSpeed="-15" ResourcePath="GameObject/Bullet/Bullet_Light" DeadEffect="GameObject/DeadEffect/DeadEffect_Light" LifeTime="5" HomingTime="0" />
+        <SingleBulletData Type="RightArc" ForwardSpeed="30" RightSpeed="0" RotateSpeed="15" ResourcePath="GameObject/Bullet/Bullet_Shadow" DeadEffect="GameObject/DeadEffect/DeadEffect_Shadow" LifeTime="5" HomingTime="0" />
+        <SingleBulletData Type="Homing" ForwardSpeed="20" RightSpeed="0" RotateSpeed="100" ResourcePath="GameObject/Bullet/Bullet_Arcane" DeadEffect="GameObject/DeadEffect/DeadEffect_Arcane" LifeTime="10" HomingTime="5" />
+          
+    </BulletDatas>
+</BulletData>

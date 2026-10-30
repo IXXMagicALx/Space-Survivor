@@ -20,6 +20,8 @@ public class BulletData
 public class SingleBulletData
 {
     [XmlAttribute]
+    public int ID;
+    [XmlAttribute]
     public E_BulletType Type;
     [XmlAttribute]
     public float ForwardSpeed;

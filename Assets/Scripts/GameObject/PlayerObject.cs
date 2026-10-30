@@ -23,9 +23,9 @@ public class PlayerObject : MonoBehaviour
     private Vector3 lastPosition;
     private Vector3 nextPosition;
     private Vector2 playerWorldToScreen;
-    public float RotateSpeed;
+    public float RotateSpeed = 5;
     private Quaternion targetQ;
-    public Quaternion MaxRotateQ = Quaternion.Euler(0,0,20);
+    public Quaternion MaxRotateQ = Quaternion.Euler(0, 0, 20);
     #endregion
 
     #endregion

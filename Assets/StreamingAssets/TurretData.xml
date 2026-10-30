@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<TurretData>
+    <TurretDatas>
+        <SingleTurretData ID="1" Type="Multi" Num="3" CD="1" BulletsID="1,1" Delay="3" />
+        <SingleTurretData ID="2" Type="Single" Num="1" CD="0" BulletsID="5,5" Delay="4" />
+        <SingleTurretData ID="3" Type="Multi" Num="3" CD="1" BulletsID="1,4" Delay="3" />
+        <SingleTurretData ID="4" Type="Multi" Num="2" CD="1" BulletsID="1,4" Delay="4" />
+        <SingleTurretData ID="5" Type="Multi" Num="3" CD="0" BulletsID="1,4" Delay="3" />
+        <SingleTurretData ID="6" Type="Multi" Num="2" CD="0" BulletsID="1,4" Delay="4" />
+    </TurretDatas>
+</TurretData>

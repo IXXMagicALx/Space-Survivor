@@ -12,6 +12,7 @@ public class GameDataManager
 		RankData = XmlDataManager.Instance.LoadXmlData(typeof(RankData),"RankData") as RankData;
 		AirplaneData = XmlDataManager.Instance.LoadXmlData(typeof(AirplaneData),"AirplaneData") as AirplaneData;
 		BulletData = XmlDataManager.Instance.LoadXmlData(typeof(BulletData),"BulletData") as BulletData;
+		TurretData = XmlDataManager.Instance.LoadXmlData(typeof(TurretData),"TurretData") as TurretData;
 
 	}
 	#endregion
@@ -20,6 +21,7 @@ public class GameDataManager
 	public RankData RankData;
 	public AirplaneData AirplaneData;
 	public BulletData BulletData;
+	public TurretData TurretData;
 
 	#region 声音相关方法
 	/// <summary>

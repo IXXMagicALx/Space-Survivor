@@ -102,6 +102,14 @@ public class GameDataManager
 	/// </summary>
 	public int NowSelectAirplaneIndex = 0;
 	/// <summary>
+	/// 提供给外部获取当前选择飞船信息的方法
+	/// </summary>
+	/// <returns>当前选择飞船的信息</returns>
+	public SingleAirplaneData GetNowSelectAirplaneData()
+	{
+		return AirplaneData.AirplaneDatas[NowSelectAirplaneIndex];
+	}
+	/// <summary>
 	/// 切换到上一个飞船
 	/// </summary>
 	public void ChangeToLastAirplane()

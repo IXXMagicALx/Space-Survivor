@@ -31,10 +31,15 @@ public class SingleAirplaneData
     [XmlAttribute]
     public int Hp;
     /// <summary>
-    /// 飞机速度
+    /// 飞机移动速度
     /// </summary>
     [XmlAttribute]
-    public int Speed;
+    public int MoveSpeed;
+    /// <summary>
+    /// 飞机水平飞行时旋转速度
+    /// </summary>
+    [XmlAttribute]
+    public int RotateSpeed;
     /// <summary>
     /// 飞机体积
     /// </summary>

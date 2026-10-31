@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5613364992604571310}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: DeadEffect_Fire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,9 +40,29 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5613364992604571310}
     m_Modifications:
+    - target: {fileID: 122216, guid: 7484de48c7f720b449b0afaf518695f1, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 153472, guid: 7484de48c7f720b449b0afaf518695f1, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 153508, guid: 7484de48c7f720b449b0afaf518695f1, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 164416, guid: 7484de48c7f720b449b0afaf518695f1, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 187646, guid: 7484de48c7f720b449b0afaf518695f1, type: 3}
       propertyPath: m_Name
       value: DamageOverTimeFire
+      objectReference: {fileID: 0}
+    - target: {fileID: 187646, guid: 7484de48c7f720b449b0afaf518695f1, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 436526, guid: 7484de48c7f720b449b0afaf518695f1, type: 3}
       propertyPath: m_LocalScale.x

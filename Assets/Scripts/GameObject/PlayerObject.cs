@@ -14,18 +14,19 @@ public class PlayerObject : MonoBehaviour
     #region 基本属性
 
     #region 血量相关
-    private int nowHp;
-    public int MaxHp;
+    [HideInInspector]
+    public int NowHp;
+    private int MaxHp;
     #endregion
 
     #region 移动旋转相关
-    public float MoveSpeed = 20;
+    private float MoveSpeed = 5;
     private Vector3 lastPosition;
     private Vector3 nextPosition;
     private Vector2 playerWorldToScreen;
-    public float RotateSpeed = 5;
+    private float RotateSpeed = 5;
     private Quaternion targetQ;
-    public Quaternion MaxRotateQ = Quaternion.Euler(0, 0, 20);
+    private Vector3 MaxRotateQ = new Vector3(0,0,20);
     #endregion
 
     #endregion
@@ -41,7 +42,32 @@ public class PlayerObject : MonoBehaviour
         if(isDead) return;
 
         MoveAndRotate();
+        ClickToDestroyBullet();
     }
+    /// <summary>
+    /// 创建玩家时用于初始化
+    /// </summary>
+    /// <param name="singleAirplaneData">要初始化的数据</param>
+    public void Init(SingleAirplaneData singleAirplaneData)
+    {
+        this.MaxHp = singleAirplaneData.Hp;
+        this.NowHp = singleAirplaneData.Hp;
+        this.MoveSpeed *= singleAirplaneData.MoveSpeed;
+        this.RotateSpeed *= singleAirplaneData.RotateSpeed;
+        this.transform.localScale = Vector3.one;
+    }
+
+    /// <summary>
+    /// 死亡
+    /// </summary>
+    private void Dead()
+    {
+        //死亡标识符置为真
+        this.isDead = true;
+        EndPanel.Instance.ShowPanel();
+
+    }
+    
     /// <summary>
     /// 移动与左右旋转
     /// </summary>
@@ -104,26 +130,37 @@ public class PlayerObject : MonoBehaviour
         if (isDead) return;
      
         //减血
-        this.nowHp--;
+        this.NowHp--;
         //更新血条
-        GamePanel.Instance.UpdateHealthBar(nowHp);
+        GamePanel.Instance.UpdateHealthBar(NowHp);
         
-        if(this.nowHp <= 0)
+        if(this.NowHp <= 0)
         {
             Dead();
         }
 
     }
     /// <summary>
-    /// 死亡
+    /// 点击消除子弹
     /// </summary>
-    private void Dead()
+    public void ClickToDestroyBullet()
     {
-        //死亡标识符置为真
-        this.isDead = true;
-        EndPanel.Instance.ShowPanel();
+        if (Input.GetMouseButtonDown(0))
+        {
+            RaycastHit hitInfo;
 
+            bool isClickBullet = Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition),
+                                                 out hitInfo, 1000,
+                                                 1 << LayerMask.NameToLayer("Bullet"));
+            if (isClickBullet)
+            {
+                BulletObject bullet = hitInfo.transform.GetComponent<BulletObject>();
+                //销毁这一子弹
+                bullet.Despawn();
+            }
+        }
     }
+    
 
     
 }

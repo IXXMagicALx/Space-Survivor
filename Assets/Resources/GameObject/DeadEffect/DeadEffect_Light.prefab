@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 134772366159604070}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: DeadEffect_Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43,6 +43,26 @@ PrefabInstance:
     - target: {fileID: 124998, guid: d8a1bb8689785ed48ac856fe608550f3, type: 3}
       propertyPath: m_Name
       value: DamageOverTimeLight
+      objectReference: {fileID: 0}
+    - target: {fileID: 124998, guid: d8a1bb8689785ed48ac856fe608550f3, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 143618, guid: d8a1bb8689785ed48ac856fe608550f3, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 153090, guid: d8a1bb8689785ed48ac856fe608550f3, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 157500, guid: d8a1bb8689785ed48ac856fe608550f3, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 169964, guid: d8a1bb8689785ed48ac856fe608550f3, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 460494, guid: d8a1bb8689785ed48ac856fe608550f3, type: 3}
       propertyPath: m_LocalScale.x

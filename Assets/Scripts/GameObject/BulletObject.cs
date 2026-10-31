@@ -92,7 +92,7 @@ public class BulletObject : MonoBehaviour
     /// <summary>
     /// 销毁子弹
     /// </summary>
-    private void Despawn()
+    public void Despawn()
     {
         //销毁子弹
         Destroy(this.gameObject);
@@ -100,6 +100,6 @@ public class BulletObject : MonoBehaviour
         GameObject deadEffect = Instantiate<GameObject>(Resources.Load(data.DeadEffect) as GameObject);
         deadEffect.transform.position = this.transform.position;
         //延时1s销毁特效
-        Destroy(deadEffect.gameObject,1);
+        Destroy(deadEffect.gameObject,2);
     }
 }

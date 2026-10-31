@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 5254090315138601630}
   - component: {fileID: 389793246024008270}
   - component: {fileID: 5139019008050114585}
-  - component: {fileID: 591212111622971077}
+  - component: {fileID: -6702800032997339132}
   - component: {fileID: 4765946433130401151}
   - component: {fileID: 5364959307651210107}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Airplane3
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -93,7 +93,7 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!54 &591212111622971077
+--- !u!54 &-6702800032997339132
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

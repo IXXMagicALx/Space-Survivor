@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6982900853200532766}
   - component: {fileID: -7476617373320848464}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Bullet_Fire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -52,7 +52,7 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 7
   m_Height: 2.5
   m_Direction: 1
   m_Center: {x: 0, y: 0.5, z: 0}
@@ -67,6 +67,18 @@ PrefabInstance:
     - target: {fileID: 131454, guid: 495b63906f5f3bb40bf58baeb0848011, type: 3}
       propertyPath: m_Name
       value: AuraRingFire
+      objectReference: {fileID: 0}
+    - target: {fileID: 131454, guid: 495b63906f5f3bb40bf58baeb0848011, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 153596, guid: 495b63906f5f3bb40bf58baeb0848011, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 168380, guid: 495b63906f5f3bb40bf58baeb0848011, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 433602, guid: 495b63906f5f3bb40bf58baeb0848011, type: 3}
       propertyPath: m_LocalScale.x

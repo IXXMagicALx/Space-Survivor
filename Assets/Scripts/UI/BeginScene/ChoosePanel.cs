@@ -61,10 +61,6 @@ public class ChoosePanel : BasePanel<ChoosePanel>
     void Update()
     {
         #region 飞船上下浮动
-        if (time >= 10)
-        {
-            time = 0;
-        }
         time += Time.deltaTime;
         
         AirplanePosition.Translate(Vector3.up * Mathf.Sin(time) * 0.0001F, Space.World);
@@ -75,9 +71,9 @@ public class ChoosePanel : BasePanel<ChoosePanel>
         {
             RaycastHit hitInfo;
             //左键按下并且射线检测到对象
-            if(Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition),out hitInfo,100,
-                               1 << LayerMask.NameToLayer("UI")) 
-                               && hitInfo.collider.gameObject.name == "AirplanePosition")
+            if(Physics.Raycast( Camera.main.ScreenPointToRay(Input.mousePosition),
+                                out hitInfo,100,
+                                1 << LayerMask.NameToLayer("UI") ))
             {
                 isSelect = true;
             }
@@ -166,7 +162,7 @@ public class ChoosePanel : BasePanel<ChoosePanel>
         
         //更新展示的属性
         int hp = nowShowSingleAirplaneData.Hp;
-        int speed = nowShowSingleAirplaneData.Speed;
+        int speed = nowShowSingleAirplaneData.MoveSpeed;
         int volume = nowShowSingleAirplaneData.Volume;
         for (int i = 0; i < AttributesCount; i++)
         {

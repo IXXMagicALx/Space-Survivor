@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1575862287119004565}
   - component: {fileID: 5175397171666827280}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Bullet_Storm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -52,7 +52,7 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 7
   m_Height: 2.5
   m_Direction: 1
   m_Center: {x: 0, y: 0.5, z: 0}
@@ -67,6 +67,22 @@ PrefabInstance:
     - target: {fileID: 121842, guid: af82839cea9b35c42a7ad215c8a1c783, type: 3}
       propertyPath: m_Name
       value: AuraRingStorm
+      objectReference: {fileID: 0}
+    - target: {fileID: 121842, guid: af82839cea9b35c42a7ad215c8a1c783, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 122330, guid: af82839cea9b35c42a7ad215c8a1c783, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 179336, guid: af82839cea9b35c42a7ad215c8a1c783, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 186370, guid: af82839cea9b35c42a7ad215c8a1c783, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 403400, guid: af82839cea9b35c42a7ad215c8a1c783, type: 3}
       propertyPath: m_LocalScale.x
